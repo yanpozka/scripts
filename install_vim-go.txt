@@ -1,0 +1,87 @@
+﻿### Cool Commands:
+gg will move the cursor to the top of the file
+G will move the cursor to the end of the file
+
+
+# com! FormatJSON %!python -m json.tool
+# Usage: :FormatJSON
+
+
+When searching: It is n for next and N for previous.
+:vimgrep /Synergy\/api-common\.git/g **/*.go
+opened list of results with :cw
+http://vim.wikia.com/wiki/Search_and_replace
+dw  delete word    4yw  copy four(4) words
+vif  select a function content    dif  delete function content
+vaf  select all the current function   daf  delete a function     yaf  copy a function
+http://vimgifs.com/
+## Set prefix and suffix (like html tags <li>) to a block of text:
+Ctrl v (# of lines) G I (with Shift) “write prefix text” Esc
+[gv$]A “write suffix text”     ## just select the block of code (gv: previous selection)
+$ will move the selection(v) to the end the line
+A will append text at the end of each line
+
+
+# apt-get install vim &&  :echo has(‘python’)  Or compile from source code:
+https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source
+
+
+# Common VIM Folders
++ Create:   mkdir -p  ~/.vim/autoload  ~/.vim/bundle  ~/.vim/colors
+
+
++ ******  Pathogen  ************
+Install to ~/.vim/autoload/pathogen.vim. Or copy and paste:
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+
++ Vim-go
+$ git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
+Inside vim ->  :GoInstallBinaries
+
+
++ Colors: copy one those to .vim/colors
+https://github.com/JarrodCTaylor/vim-256-color-schemes/tree/master/colors
+
+
++ Nerdtree & Nerdtree Execute
+cd ~/.vim/bundle && git clone https://github.com/scrooloose/nerdtree.git
+
+
+git clone https://github.com/ivalkeen/nerdtree-execute.git
+(When navigating in NERDTree, select file or directory, press 'm' key, and NERDTree menu will appear. Press 'x')
+
+
+
+
++++ YouCompleteMe, if pc reinstallation  devs packages
+$ cd ~/.vim/bundle
+$ git clone https://github.com/Valloric/YouCompleteMe.git
+$ cd YouCompleteMe && git submodule update --init --recursive
+$ python install.py --clang-completer --gocode-completer
+
+
++ vim-Airline
+git clone https://github.com/bling/vim-airline ~/.vim/bundle/vim-airline
+
+
++ Git-gutter, to see changes in git
+cd ~/.vim/bundle && git clone https://github.com/airblade/vim-gitgutter.git
+
+
++ Commentary.vim   gc to comment or uncomment block of code
+cd ~/.vim/bundle && git clone https://github.com/tpope/vim-commentary.git
+
+
++ Python jedi
+cd ~/.vim/bundle/ && git clone --recursive https://github.com/davidhalter/jedi-vim.git
+
+
+AutoPep8: sudo pip install --upgrade autopep8
+ cd ~/.vim/bundle/ &&  git clone https://github.com/tell-k/vim-autopep8.git
++ JavaScript autoformat:
+cd ~/.vim/bundle && git clone https://github.com/maksimr/vim-jsbeautify.git
+cd vim-jsbeautify && git submodule update --init --recursive
+
+
+******************** Create and copy  ~/.vimrc  **************************
