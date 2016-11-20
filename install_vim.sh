@@ -3,6 +3,9 @@
 # apt-get install vim &&  :echo has('python')  Or compile from source code:
 # https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source
 
+DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
+ln -s $DIR/vimrc ~/.vimrc
+
 mkdir -p ~/.vim/autoload ~/.vim/bundle ~/.vim/colors
 
 echo "Downloading Pathogen ..."
@@ -48,6 +51,7 @@ go get -v -u github.com/jstemmer/gotags
 git clone --recursive https://github.com/davidhalter/jedi-vim.git
 
 # autopep8
+sudo pip install --upgrade pip
 sudo pip install --upgrade autopep8
 git clone https://github.com/tell-k/vim-autopep8.git
 
