@@ -40,6 +40,9 @@ git clone https://github.com/airblade/vim-gitgutter.git
 #
 git clone https://github.com/tpope/vim-commentary.git
 
+# :Gdiff  :Gsplit  :Gstatus  :Gblame  :Gcommit
+git clone git://github.com/tpope/vim-fugitive.git
+
 # Tagbar
 sudo apt install -y exuberant-ctags
 git clone https://github.com/majutsushi/tagbar.git
@@ -55,7 +58,11 @@ sudo pip install --upgrade pip
 sudo pip install --upgrade autopep8
 git clone https://github.com/tell-k/vim-autopep8.git
 
+
 # JavaScript autoformat
+#
+# make sure this is the last one :P
+#
 git clone https://github.com/maksimr/vim-jsbeautify.git
 cd vim-jsbeautify && git submodule update --init --recursive
 
