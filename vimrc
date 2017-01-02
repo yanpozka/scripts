@@ -8,11 +8,16 @@ set incsearch
 set nocompatible
 
 " Search files into subfolders with :find
-set path+=**
+set path=.,**
 
 " suggestion with Tab when :find
 " we can use * for fuzzy
 set wildmenu
+
+" ^x^n for JUST this file
+" ^x^f for filenames (works with our path trick!)
+" ^x^] for tags only
+" ^n for anything specified by the 'complete' option
 
 set tabstop=4 shiftwidth=4 smarttab
 set backspace=indent,eol,start
