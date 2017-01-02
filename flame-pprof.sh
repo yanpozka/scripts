@@ -10,7 +10,7 @@
 #
 # ./flame-pprof.sh [url_to_test] [url_pprof]
 #
-# ./flame-pprof.sh http://127.0.0.1:6060/yandry http://127.0.0.1:6060
+# ./flame-pprof.sh http://127.0.0.1:6060/endpoint-name  http://127.0.0.1:6060
 
 hey -n 9000 -c 1000 $1 &
 

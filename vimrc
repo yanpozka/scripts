@@ -5,6 +5,7 @@ set hlsearch " :noh
 " set autowriteall
 set incsearch
 " set number
+set nocompatible
 
 set tabstop=4 shiftwidth=4 smarttab
 set backspace=indent,eol,start
