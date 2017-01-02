@@ -7,6 +7,13 @@ set incsearch
 " set number
 set nocompatible
 
+" Search files into subfolders with :find
+set path+=**
+
+" suggestion with Tab when :find
+" we can use * for fuzzy
+set wildmenu
+
 set tabstop=4 shiftwidth=4 smarttab
 set backspace=indent,eol,start
 
