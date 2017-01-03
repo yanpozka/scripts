@@ -41,6 +41,7 @@ nnoremap <C-j> :%!jq . --tab<CR>
 nnoremap <leader>J :%!jq . -c<CR>
 nmap <F8> :TagbarToggle<CR>
 
+com! FormatJSON %!python -m json.tool
 
 " Auto commands
 autocmd CompleteDone * pclose
