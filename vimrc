@@ -41,6 +41,10 @@ nnoremap <C-j> :%!jq . --tab<CR>
 nnoremap <leader>J :%!jq . -c<CR>
 nmap <F8> :TagbarToggle<CR>
 
+nmap <F5> :GoVet ./...<CR>
+nmap <F6> :GoBuild<CR>
+nmap <F7> :GoLint ./...<CR>
+
 com! FormatJSON %!python -m json.tool
 
 " Auto commands
@@ -75,6 +79,10 @@ autocmd FileType javascript noremap <buffer> <c-F> :call JsBeautify()<cr>
 autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
 " css or scss
 autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
+
+autocmd BufWritePre *.js :call JsBeautify()
+autocmd BufWritePre *.html  :call HtmlBeautify()
+autocmd BufWritePre *.css :call CSSBeautify()
 
 
 "" Python
