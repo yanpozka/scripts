@@ -48,11 +48,13 @@ nmap <F7> :GoLint ./...<CR>
 com! FormatJSON %!python -m json.tool
 
 " Auto commands
-autocmd CompleteDone * pclose
+"
+autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
+
+" autocmd CompleteDone * pclose
 " au VimEnter * NERDTree
 "
 " Trying to change cursor when Insert Mode, but doesn't work :(
-"
 " autocmd InsertEnter * set cul
 " autocmd InsertLeave * set nocul
 " autocmd InsertEnter,InsertLeave * set cul!
