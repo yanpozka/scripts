@@ -74,7 +74,7 @@ let g:go_highlight_operators = 1
 " autocmd BufWritePost *.go :GoErrCheck
 
 "" Js
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+" autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 
 autocmd FileType javascript noremap <buffer> <c-F> :call JsBeautify()<cr>
 " html
@@ -82,7 +82,7 @@ autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
 " css or scss
 autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
 
-autocmd BufWritePre *.js :call JsBeautify()
+" autocmd BufWritePre *.js :call JsBeautify()
 autocmd BufWritePre *.html  :call HtmlBeautify()
 autocmd BufWritePre *.css :call CSSBeautify()
 
