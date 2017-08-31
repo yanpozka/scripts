@@ -22,6 +22,8 @@ set wildmenu
 set tabstop=4 shiftwidth=4 smarttab
 set backspace=indent,eol,start
 
+syntax sync minlines=200
+
 " Pathogen popular
 execute pathogen#infect()
 call pathogen#helptags() " generate helptags for everything in ‘runtimepath’
