@@ -22,7 +22,9 @@ set wildmenu
 set tabstop=4 shiftwidth=4 smarttab
 set backspace=indent,eol,start
 
-syntax sync minlines=200
+" Ctrl L if syntax is lost
+noremap <F12> <Esc>:syntax sync fromstart<CR>
+inoremap <F12> <C-o>:syntax sync fromstart<CR>
 
 " Pathogen popular
 execute pathogen#infect()
