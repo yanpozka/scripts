@@ -102,7 +102,7 @@ let g:autoformat_max_line_length=120
 " Indent on save hook
 autocmd BufWritePre *.py :Autopep8
 
-
+set paste
 set t_Co=256
 " colorscheme vividchalk
 " colorscheme distinguished
