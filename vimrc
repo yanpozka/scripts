@@ -39,7 +39,7 @@ map <C-D> :GoDef<CR>
 map <C-H> :noh<CR>
 map <C-S> :w<CR>
 " 
-map <C-u> :u<CR>
+map <C-z> :u<CR>
 nnoremap <C-b> :%!xxd<CR>
 nnoremap <C-j> :%!jq . --tab<CR>
 nnoremap <leader>J :%!jq . -c<CR>
