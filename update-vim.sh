@@ -9,6 +9,8 @@ bundle_dir=~/.vim/bundle
 cd $bundle_dir
 
 for dir in * ; do
+	[ -d "${dir}" ] || continue # if not a directory, skip
+
 	echo "$dir"
 	cd $dir
 	git pull

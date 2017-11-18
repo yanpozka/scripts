@@ -22,6 +22,8 @@ set wildmenu
 set tabstop=4 shiftwidth=4 smarttab
 set backspace=indent,eol,start
 
+set mmp=10000
+
 " Ctrl L if syntax is lost
 noremap <F12> <Esc>:syntax sync fromstart<CR>
 inoremap <F12> <C-o>:syntax sync fromstart<CR>
@@ -102,7 +104,6 @@ let g:autoformat_max_line_length=120
 " Indent on save hook
 autocmd BufWritePre *.py :Autopep8
 
-set paste
 set t_Co=256
 " colorscheme vividchalk
 " colorscheme distinguished
