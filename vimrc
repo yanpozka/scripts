@@ -40,6 +40,8 @@ map <C-I> :GoImports<CR>
 map <C-D> :GoDef<CR>
 map <C-H> :noh<CR>
 map <C-S> :w<CR>
+map <C-a> <esc>ggVG<CR>
+
 " 
 map <C-z> :u<CR>
 nnoremap <C-b> :%!xxd<CR>
