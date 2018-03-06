@@ -49,12 +49,13 @@ git clone https://github.com/majutsushi/tagbar.git
 go get -v -u github.com/jstemmer/gotags
 
 # Python
+sudo pip install --upgrade pip
 
 # jedi
+sudo pip install --upgrade jedi
 git clone --recursive https://github.com/davidhalter/jedi-vim.git
 
 # autopep8
-sudo pip install --upgrade pip
 sudo pip install --upgrade autopep8
 git clone https://github.com/tell-k/vim-autopep8.git
 
