@@ -15,8 +15,6 @@ sudo rm -rf /usr/local/go/
 
 sudo tar -C /usr/local -xzf /tmp/go.tar.gz
 
+echo ""
 go version
-
-go get -v -u github.com/FiloSottile/gorebuild
-
-gorebuild
+echo ""
