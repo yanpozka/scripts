@@ -17,3 +17,6 @@ for dir in * ; do
 	git submodule update --recursive
 	cd ..
 done
+
+
+cd vim-go; git fetch; git checkout tags/v1.17

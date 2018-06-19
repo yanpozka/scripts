@@ -16,6 +16,7 @@ cd ~/.vim/bundle
 
 # vim-go
 git clone https://github.com/fatih/vim-go.git
+cd vim-go; git checkout tags/v1.17; cd ..
 
 # 256 colors
 tmpcolors_dir=/tmp/vim-colors-256
@@ -31,7 +32,7 @@ git clone https://github.com/scrooloose/nerdtree.git
 git clone https://github.com/ivalkeen/nerdtree-execute.git
 
 # ctrl p
-git clone git@github.com:ctrlpvim/ctrlp.vim.git
+git clone https://github.com/ctrlpvim/ctrlp.vim.git 
 
 # airline
 git clone https://github.com/bling/vim-airline
@@ -45,7 +46,7 @@ git clone https://github.com/airblade/vim-gitgutter.git
 git clone https://github.com/tpope/vim-commentary.git
 
 # :Gdiff  :Gsplit  :Gstatus  :Gblame  :Gcommit
-git clone git://github.com/tpope/vim-fugitive.git
+git clone https://github.com/tpope/vim-fugitive.git
 
 # Tagbar
 sudo apt install -y exuberant-ctags
