@@ -30,6 +30,9 @@ git clone https://github.com/scrooloose/nerdtree.git
 #
 git clone https://github.com/ivalkeen/nerdtree-execute.git
 
+# ctrl p
+git clone git@github.com:ctrlpvim/ctrlp.vim.git
+
 # airline
 git clone https://github.com/bling/vim-airline
 

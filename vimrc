@@ -13,6 +13,8 @@ set path=.,**
 " suggestion with Tab when :find
 " we can use * for fuzzy
 set wildmenu
+" ignore vendor folders
+set wildignore+=vendor/**
 
 " ^x^n for JUST this file
 " ^x^f for filenames (works with our path trick!)
