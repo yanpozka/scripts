@@ -51,9 +51,9 @@ nnoremap <C-j> :%!jq . --tab<CR>
 nnoremap <leader>J :%!jq . -c<CR>
 nmap <F8> :TagbarToggle<CR>
 
-nmap <F5> :GoVet ./...<CR>
+nmap <F5> :GoVet<CR>
 nmap <F6> :GoBuild<CR>
-nmap <F7> :GoLint ./...<CR>
+nmap <F7> :GoReferrers<CR>
 
 com! FormatJSON %!python -m json.tool
 
