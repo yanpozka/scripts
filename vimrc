@@ -44,6 +44,9 @@ map <C-H> :noh<CR>
 map <C-S> :w<CR>
 map <C-a> <esc>ggVG<CR>
 
+" let g:go_metalinter_autosave = 1 
+" let g:go_metalinter_autosave_enabled = ['vet']
+
 " 
 map <C-z> :u<CR>
 nnoremap <C-b> :%!xxd<CR>
@@ -111,7 +114,7 @@ autocmd BufWritePre *.py :Autopep8
 set t_Co=256
 " colorscheme vividchalk
 " colorscheme distinguished
-colorscheme honeybadger 
+colorscheme honeybadger
 
 " folding settings za: toggle folding, zM: fold everything, zR: unfold everything 
 " help :folding

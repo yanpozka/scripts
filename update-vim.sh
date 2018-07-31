@@ -13,10 +13,10 @@ for dir in * ; do
 
 	echo "$dir"
 	cd $dir
-	git pull
+	git pull origin master
 	git submodule update --recursive
 	cd ..
 done
 
 
-cd vim-go; git fetch; git checkout tags/v1.17
+cd vim-go; git fetch; git checkout tags/v1.18
