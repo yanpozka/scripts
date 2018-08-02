@@ -23,7 +23,7 @@ set wildignore+=vendor/**
 
 set tabstop=4 shiftwidth=4 smarttab
 set backspace=indent,eol,start
-
+set autoread
 set mmp=10000
 
 " Ctrl L if syntax is lost
