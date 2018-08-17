@@ -50,6 +50,7 @@ map <C-a> <esc>ggVG<CR>
 
 " 
 map <C-z> :u<CR>
+map <C-y> :redo<CR>
 nnoremap <C-b> :%!xxd<CR>
 nnoremap <C-j> :%!jq . --tab<CR>
 nnoremap <leader>J :%!jq . -c<CR>
