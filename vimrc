@@ -58,7 +58,6 @@ nmap <F8> :TagbarToggle<CR>
 
 nmap <F5> :GoVet<CR>
 nmap <F6> :GoBuild<CR>
-nmap <F7> :GoReferrers<CR>
 
 com! FormatJSON %!python -m json.tool
 
