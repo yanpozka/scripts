@@ -89,6 +89,7 @@ let g:go_highlight_operators = 1
 
 " let g:go_auto_sameids = 1
 let g:go_auto_type_info = 1
+let g:go_addtags_transform = "camelcase"
 
 
 "" Js
