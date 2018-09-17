@@ -43,7 +43,6 @@ map <C-D> :GoDef<CR>
 map <C-r> :GoReferrers<CR>
 map <C-e> :GoRename<CR>
 map <C-H> :noh<CR>
-map <C-S> :w<CR>
 map <C-a> <esc>ggVG<CR>
 
 " let g:go_metalinter_autosave = 1 
