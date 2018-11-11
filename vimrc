@@ -56,7 +56,7 @@ nnoremap <C-j> :%!jq . --tab<CR>
 nnoremap <leader>J :%!jq . -c<CR>
 nmap <F8> :TagbarToggle<CR>
 
-nmap <F5> :GoVet<CR>
+nmap <F5> :GoInstall<CR>
 nmap <F6> :GoBuild<CR>
 nmap <F7> :GoTest<CR>
 
