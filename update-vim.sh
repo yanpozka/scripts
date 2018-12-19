@@ -13,6 +13,7 @@ for dir in * ; do
 
 	echo "$dir"
 	cd $dir
+	git checkout master
 	git pull origin master
 	git submodule update --recursive
 	cd ..
