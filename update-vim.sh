@@ -19,4 +19,4 @@ for dir in * ; do
 done
 
 
-cd vim-go; git fetch; git checkout tags/v1.18
+cd vim-go; git fetch; git checkout tags/v1.19
