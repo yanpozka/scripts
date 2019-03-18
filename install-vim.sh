@@ -45,6 +45,9 @@ git clone https://github.com/airblade/vim-gitgutter.git
 #
 git clone https://github.com/tpope/vim-commentary.git
 
+# fast HTML editing
+git clone https://github.com/mattn/emmet-vim.git
+
 # :Gdiff  :Gsplit  :Gstatus  :Gblame  :Gcommit
 git clone https://github.com/tpope/vim-fugitive.git
 
