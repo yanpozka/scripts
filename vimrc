@@ -15,6 +15,7 @@ set path=.,**
 set wildmenu
 " ignore vendor folders
 set wildignore+=vendor/**
+set wildignore+=node_modules/**
 
 " ^x^n for JUST this file
 " ^x^f for filenames (works with our path trick!)
