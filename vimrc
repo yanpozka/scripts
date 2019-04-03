@@ -61,6 +61,16 @@ nmap <F5> :GoInstall<CR>
 nmap <F6> :GoBuild<CR>
 nmap <F7> :GoTest<CR>
 
+" https://stackoverflow.com/a/6988748
+map ^[OA <up>
+map ^[OB <down>
+map ^[OC <right>
+map ^[OD <left>
+map <C-v><Esc>OA <up>
+map <C-v><Esc>OB <down>
+map <C-v><Esc>OC <right>
+map <C-v><Esc>OD <left>
+
 com! FormatJSON %!python -m json.tool
 
 " Auto commands
