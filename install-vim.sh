@@ -19,9 +19,9 @@ git clone https://github.com/fatih/vim-go.git
 cd vim-go; git checkout tags/v1.20; cd ..
 
 # 256 colors
-tmpcolors_dir=/tmp/vim-colors-256
-git clone https://github.com/JarrodCTaylor/vim-256-color-schemes.git $tmpcolorsdir 
-cp $tmpcolorsdir/colors/*.vim ~/.vim/colors
+mkdir -p /tmp/vim-colors-256
+git clone https://github.com/JarrodCTaylor/vim-256-color-schemes.git /tmp/vim-colors-256
+cp /tmp/vim-colors-256/colors/*.vim ~/.vim/colors
 
 # nerdtree
 git clone https://github.com/scrooloose/nerdtree.git
