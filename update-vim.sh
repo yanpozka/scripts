@@ -23,6 +23,7 @@ done
 cd vim-go; git fetch; git checkout tags/v1.20
 
 # 256 colors
+rm -rf /tmp/vim-colors-256
 mkdir -p /tmp/vim-colors-256
 git clone https://github.com/yanpozka/vim-256-color-schemes.git /tmp/vim-colors-256
 cp /tmp/vim-colors-256/colors/*.vim ~/.vim/colors
