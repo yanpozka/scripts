@@ -20,7 +20,7 @@ cd vim-go; git checkout tags/v1.20; cd ..
 
 # 256 colors
 mkdir -p /tmp/vim-colors-256
-git clone https://github.com/JarrodCTaylor/vim-256-color-schemes.git /tmp/vim-colors-256
+git clone https://github.com/yanpozka/vim-256-color-schemes.git /tmp/vim-colors-256
 cp /tmp/vim-colors-256/colors/*.vim ~/.vim/colors
 
 # nerdtree
