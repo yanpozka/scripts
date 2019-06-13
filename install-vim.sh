@@ -16,7 +16,7 @@ cd ~/.vim/bundle
 
 # vim-go
 git clone https://github.com/fatih/vim-go.git
-cd vim-go; git checkout tags/v1.19; cd ..
+cd vim-go; git checkout tags/v1.20; cd ..
 
 # 256 colors
 tmpcolors_dir=/tmp/vim-colors-256
