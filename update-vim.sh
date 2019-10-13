@@ -20,7 +20,7 @@ for dir in * ; do
 done
 
 # restore vim-go
-cd vim-go; git fetch; git checkout tags/v1.20
+cd vim-go; git fetch; git checkout tags/v1.21
 
 # 256 colors
 rm -rf /tmp/vim-colors-256
