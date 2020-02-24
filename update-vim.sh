@@ -14,13 +14,14 @@ for dir in * ; do
 	echo "$dir"
 	cd $dir
 	git checkout master
+	git fetch
 	git pull origin master
 	git submodule update --recursive
 	cd ..
 done
 
 # restore vim-go
-cd vim-go; git fetch; git checkout tags/v1.21
+cd vim-go; git fetch; git checkout tags/v1.22
 
 # 256 colors
 rm -rf /tmp/vim-colors-256

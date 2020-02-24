@@ -92,10 +92,13 @@ let g:ycm_add_preview_to_completeopt = 0
 let g:gitgutter_max_signs=10000
 
 "" Golang
-let g:go_highlight_functions = 1
-let g:go_highlight_methods = 1
-let g:go_highlight_structs = 1
+let g:go_fmt_command = "goimports"
+let g:go_highlight_functions = 0
+let g:go_highlight_methods = 0
+let g:go_highlight_structs = 0
 let g:go_highlight_operators = 1
+let g:go_highlight_diagnostic_errors = 0
+let g:go_highlight_diagnostic_warnings = 0
 
 " let g:go_auto_sameids = 1
 let g:go_auto_type_info = 1
