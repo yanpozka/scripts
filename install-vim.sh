@@ -16,7 +16,7 @@ cd ~/.vim/bundle
 
 # vim-go
 git clone https://github.com/fatih/vim-go.git
-cd vim-go; git checkout tags/v1.21; cd ..
+cd vim-go; git checkout tags/v1.25; cd ..
 
 # 256 colors
 mkdir -p /tmp/vim-colors-256
@@ -54,17 +54,18 @@ git clone https://github.com/tpope/vim-fugitive.git
 # Tagbar
 sudo apt install -y exuberant-ctags
 git clone https://github.com/majutsushi/tagbar.git
-go get -v -u github.com/jstemmer/gotags
+go install github.com/jstemmer/gotags@latest
 
 # Python
-sudo pip install --upgrade pip
+# sudo pip install --upgrade pip
+sudo pip3 install --upgrade pip
 
 # jedi
-sudo pip install --upgrade jedi
+sudo pip3 install --upgrade jedi
 git clone --recursive https://github.com/davidhalter/jedi-vim.git
 
 # autopep8
-sudo pip install --upgrade autopep8
+sudo pip3 install --upgrade autopep8
 git clone https://github.com/tell-k/vim-autopep8.git
 
 
@@ -72,6 +73,6 @@ git clone https://github.com/tell-k/vim-autopep8.git
 #
 # make sure this is the last one :P
 #
-git clone https://github.com/maksimr/vim-jsbeautify.git
-cd vim-jsbeautify && git submodule update --init --recursive
+# git clone https://github.com/maksimr/vim-jsbeautify.git
+# cd vim-jsbeautify && git submodule update --init --recursive
 
