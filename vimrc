@@ -1,6 +1,7 @@
 "
 " Yandry vimrc file
 "
+filetype plugin on
 set hlsearch " :noh
 " set autowriteall
 set incsearch
@@ -39,12 +40,13 @@ filetype plugin indent on
 
 " Maps
 map <C-n> :NERDTreeToggle<CR>
-map <C-I> :GoImports<CR>
+map <C-i> :GoImplements<CR>
 map <C-D> :GoDef<CR>
 map <C-r> :GoReferrers<CR>
 map <C-e> :GoRename<CR>
 map <C-H> :noh<CR>
 map <C-a> <esc>ggVG<CR>
+map <Home> 0
 
 " let g:go_metalinter_autosave = 1 
 " let g:go_metalinter_autosave_enabled = ['vet']
@@ -59,7 +61,7 @@ nmap <F8> :TagbarToggle<CR>
 
 nmap <F5> :GoRun<CR>
 nmap <F6> :GoBuild<CR>
-nmap <F7> :GoTest<CR>
+nmap <F7> :GoTest -c<CR>
 
 " https://stackoverflow.com/a/6988748
 map ^[OA <up>
@@ -71,7 +73,12 @@ map <C-v><Esc>OB <down>
 map <C-v><Esc>OC <right>
 map <C-v><Esc>OD <left>
 
-com! FormatJSON %!python -m json.tool
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<2-LeftMouse>'],
+    \ 'AcceptSelection("t")': ['<cr>'],
+    \ }
+
+com! FormatJSON %!python3 -m json.tool
 
 " Auto commands
 "

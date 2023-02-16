@@ -21,7 +21,7 @@ for dir in * ; do
 done
 
 # restore vim-go
-cd vim-go; git fetch; git checkout tags/v1.22
+cd vim-go; git fetch; git checkout tags/v1.26
 
 # 256 colors
 rm -rf /tmp/vim-colors-256
